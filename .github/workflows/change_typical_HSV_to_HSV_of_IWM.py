@@ -6,7 +6,6 @@ S=float(S)
 V=float(V)
 h=round(H*180)
 t=S*4
-w=round(V*100)
 from decimal import Decimal
 s=Decimal(t).quantize(Decimal("0.01"),rounding="ROUND_HALF_UP")
 print(h,s,'{:.0%}'.format(V))
